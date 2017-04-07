@@ -24,7 +24,7 @@ class StoriesController < ApplicationController
   def create
     @story = Story.new(story_params)
 
-    if @story.save
+    if @story.valid? && @story.save
       redirect_to '/stories', notice: 'Story was successfully created.'
     else
       render :new
@@ -34,7 +34,7 @@ class StoriesController < ApplicationController
   # PATCH/PUT /stories/1
   def update
     @story = Story.find(params[:id])
-    if @story.update(story_params)
+    if @story.valid? && @story.update(story_params)
       redirect_to @story, notice: 'Story was successfully updated.'
     else
       render :edit
