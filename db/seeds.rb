@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
+require 'nokogiri'
+
+Nokogiri::HTML(open('https://news.ycombinator.com/news?p=3')).css(".storylink").each { |link| Story.create(title: link.content, url: link.values.first, email: 'smoline@gmail.com') }
+
+# https://news.ycombinator.com
+# https://news.ycombinator.com/news?p=2
+# https://news.ycombinator.com/news?p=3
