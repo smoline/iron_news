@@ -9,13 +9,13 @@
         <th class="info">Commenter Email</th>
       </tr>
       <tr>
-        <td><%= f.text_field :commenter %></td>
+        <td><%= f.text_field :commenter, placeholder: "Enter Your Email Here" %></td>
       </tr>
       <tr>
         <th class="info">Comments</th>
       </tr>
       <tr>
-        <td><%= f.text_area :body %></td>
+        <td><%= f.text_area :body, rows: "4", style: 'width:100%', placeholder: "Enter Your Comment Here" %></td>
       </tr>
     </table>
   </div>

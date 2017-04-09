@@ -7,19 +7,19 @@
       <%- @stories.each.with_index do |story, index| %>
       <tr class="warning">
         <td><%= index + 1 %></td>
-        <td colspan="1"><%=link_to story.title, story.url %>
-          <td>
-            <%= link_to story do %>
-              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-              Details
-            <% end %>
-          </td>
-        </td>
+        <td colspan="2"><%=link_to story.title, story.url %></td>
+        <td><span class="badge"><%= story.comments.count %> Comments</span></td>
       </tr>
       <tr>
         <td></td>
         <td>Posted at <%= time_ago_in_words(story.created_at) %> ago</td>
         <td><%= story.email %></td>
+        <td>
+          <%= link_to story do %>
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            Details
+          <% end %>
+        </td>
       </tr>
       <% end %>
     </tbody>
