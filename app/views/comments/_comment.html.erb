@@ -1,0 +1,17 @@
+
+  <% @story.comments.each do |comment| %>
+  <table class="table">
+    <tr>
+      <th class="info">Commenter Email</th>
+    </tr>
+    <tr>
+      <td><%= comment.commenter %></td>
+    </tr>
+    <tr>
+      <th class="info">Comments</th>
+    </tr>
+    <tr>
+      <td><%= comment.body %></td>
+    <tr>
+    </table>
+  <% end %>
