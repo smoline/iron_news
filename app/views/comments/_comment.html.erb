@@ -1,13 +1,13 @@
 <table class="table">
   <tr>
-    <th class="info" colspan="2">Commenter Email</th>
+    <th class="active" colspan="2">Commenter Email</th>
   </tr>
   <tr>
     <td><%= comment.commenter %></td>
     <td class="pull-right"><%= link_to 'Delete Comment', [comment.story, comment], method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
   <tr>
-    <th class="info" colspan="2">Comments</th>
+    <th class="active" colspan="2">Comments</th>
   </tr>
   <tr>
     <td colspan="2"><%= comment.body %></td>

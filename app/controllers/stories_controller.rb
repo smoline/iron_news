@@ -1,4 +1,5 @@
 class StoriesController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "password", except: [:index, :show, :new, :create]
 
   # GET /stories
   def index

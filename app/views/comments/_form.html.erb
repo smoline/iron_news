@@ -6,16 +6,16 @@
     <%= form_for([@story, @story.comments.build]) do |f| %>
     <table class="table">
       <tr>
-        <th class="info">Commenter Email</th>
+        <th class="active">Commenter Email</th>
       </tr>
       <tr>
-        <td><%= f.text_field :commenter, placeholder: "Enter Your Email Here" %></td>
+        <td><%= f.text_field :commenter, class: "form-control", placeholder: "Enter Your Email Here" %></td>
       </tr>
       <tr>
-        <th class="info">Comments</th>
+        <th class="active">Comments</th>
       </tr>
       <tr>
-        <td><%= f.text_area :body, rows: "4", style: 'width:100%', placeholder: "Enter Your Comment Here" %></td>
+        <td><%= f.text_area :body, class: "form-control", placeholder: "Enter Your Comment Here" %></td>
       </tr>
     </table>
   </div>
