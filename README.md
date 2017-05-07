@@ -1,5 +1,9 @@
 # Iron News
 
+## This app is built with Rails 5.0 and Ruby 2.4
+
+#### See this app here: https://tiy-iron-news.herokuapp.com/
+
 ### The purpose of this project is to reimplement the home page of Hacker News but with a Bootstrap / The Iron Yard flare.
 
 * Main Url has a list of stories with the most recently posted story on top
