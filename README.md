@@ -4,7 +4,7 @@
 
 #### See this app here: https://tiy-iron-news.herokuapp.com/
 
-### The purpose of this project is to reimplement the home page of Hacker News but with a Bootstrap / The Iron Yard flare.
+### The purpose of this project is to reimplement the home page of Hacker News but with a Bootstrap/Iron Yard flare.
 
 * Main Url has a list of stories with the most recently posted story on top
 * The index shows the name of the story that is also a link to the story and a timestamp when the story was posted, and the email address of the person who submitted it.
